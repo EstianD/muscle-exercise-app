@@ -6,7 +6,7 @@ const useHumanAnatomy = () => {
   const [tooltipData, setTooltipData] = useState("");
   // Mouse over event for body parts
   const enterArea = (area) => {
-    console.log("AREA: ", area);
+    // console.log("AREA: ", area);
     setOnHover(true);
     setTooltipPosition(area.tooltip);
     setTooltipData(area.description);
@@ -14,10 +14,16 @@ const useHumanAnatomy = () => {
 
   const leaveArea = () => {
     setOnHover(false);
-    console.log("LEAVE");
+    // console.log("LEAVE");
   };
 
-  return { enterArea, leaveArea, onHover, tooltipPosition, tooltipData };
+  return {
+    enterArea,
+    leaveArea,
+    onHover,
+    tooltipPosition,
+    tooltipData,
+  };
 };
 
 export default useHumanAnatomy;

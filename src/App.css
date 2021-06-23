@@ -41,3 +41,65 @@ map {
 .tooltip-container {
   width: 50%;
 }
+
+/* Muscle description sections */
+.muscle-description-container {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.muscle-image {
+  /* width: 100%;
+  height: 100%; */
+  flex-grow: 1;
+}
+
+.muscle-image img {
+  width: 500px;
+  height: 500px;
+}
+
+/* Exercises section */
+.exercises-container {
+  padding: 25px;
+  text-align: left;
+}
+
+/* Pagination section */
+.pagination-container {
+  display: flex;
+}
+
+.pagenum {
+  border: 1px solid black;
+  padding: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* .pagenum:hover {
+  background-color: gray;
+  cursor: pointer;
+} */
+
+.page-btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.page-btn:hover {
+  cursor: pointer;
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  .muscle-image img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .muscle-description-container {
+    display: block;
+  }
+}

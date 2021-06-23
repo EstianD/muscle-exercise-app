@@ -11,7 +11,7 @@ import { MapPoints } from "../MapPoints";
 // Import components
 import Tooltip from "./Tooltip";
 
-const HumanAnatomy = () => {
+const HumanAnatomy = ({ handleMuscleClick }) => {
   const { enterArea, leaveArea, onHover, tooltipPosition, tooltipData } =
     useHumanAnatomy();
   const {
@@ -22,7 +22,7 @@ const HumanAnatomy = () => {
     visible,
   } = usePopperTooltip();
 
-  console.log(MapPoints());
+  // console.log(MapPoints());
   return (
     <div className="landing-page">
       {/* {onHover && <Tooltip />} */}
@@ -46,6 +46,7 @@ const HumanAnatomy = () => {
           // onLoad={() => this.load()}
           onMouseEnter={(area) => enterArea(area)}
           onMouseLeave={(area) => leaveArea(area)}
+          onClick={(area) => handleMuscleClick(area)}
         />
       </div>
       <div className="tooltip-container">

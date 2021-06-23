@@ -8,6 +8,7 @@ export function MapPoints() {
     areas: [
       {
         name: "Pectoralis major",
+        id: 4,
         shape: "poly",
         coords: [
           114, 168, 116, 179, 121, 186, 127, 192, 135, 193, 144, 193, 155, 189,
@@ -19,10 +20,13 @@ export function MapPoints() {
         strokeColor: BORDER_COLOR,
         lineWidth: BORDER_WIDTH,
         tooltip: "left",
-        description: `<h4>Pectoralis major</h4><p>Pectoralis major is a thick, fan-shaped muscle contributing to the thoracobrachial motion. It consists of a clavicular part and a sternal part, both converging to a flat tendon that inserts on the humerus. It’s innervated by both medial and lateral pectoral nerves.</p>`,
+        description: `<h4>Pectoralis major</h4><p>The pectoralis major is a paired, superficial muscle located on the anterior surface of the thoracic cage. The pectoralis major has a broad origin, based on which it is divided into three parts: clavicular part, sternocostal part and abdominal part. All three parts converge laterally and insert onto the greater tubercle of humerus.</p><p>The main function of this chest muscle as a whole is the adduction and internal rotation of the arm on the shoulder joint. Acting independently, the clavicular part helps to flex the extended arm up to 90°, while the sternocostal part facilitates the extension of the flexed arm by pulling it downwards.</p>`,
+        image:
+          "https://www.physio-pedia.com/images/c/c6/Gray410_pectoralis_major.png",
       },
       {
         name: "Biceps brachii right",
+        id: 1,
         shape: "poly",
         coords: [
           110, 175, 95, 187, 89, 202, 86, 217, 86, 235, 90, 244, 101, 238, 105,
@@ -36,6 +40,7 @@ export function MapPoints() {
       },
       {
         name: "Biceps brachii left",
+        id: 1,
         shape: "poly",
         coords: [
           217, 173, 215, 180, 216, 194, 214, 204, 213, 212, 222, 229, 227, 235,
@@ -49,6 +54,7 @@ export function MapPoints() {
       },
       {
         name: "Anterior deltoid right",
+        id: 2,
         shape: "poly",
         coords: [
           91, 200, 97, 188, 104, 180, 111, 172, 115, 159, 121, 147, 132, 134,
@@ -62,6 +68,7 @@ export function MapPoints() {
       },
       {
         name: "Anterior deltoid left",
+        id: 2,
         shape: "poly",
         coords: [
           229, 188, 222, 178, 215, 169, 215, 157, 206, 145, 191, 135, 206, 133,
@@ -75,6 +82,7 @@ export function MapPoints() {
       },
       {
         name: "Anterior deltoid back right",
+        id: 2,
         shape: "poly",
         coords: [
           341, 182, 347, 163, 353, 154, 360, 147, 369, 145, 387, 140, 374, 137,
@@ -88,6 +96,7 @@ export function MapPoints() {
       },
       {
         name: "Anterior deltoid back left",
+        id: 2,
         shape: "poly",
         coords: [
           491, 175, 490, 153, 486, 143, 481, 138, 473, 133, 460, 137, 445, 140,
@@ -101,6 +110,7 @@ export function MapPoints() {
       },
       {
         name: "Serratus anterior right",
+        id: 3,
         shape: "poly",
         coords: [
           137, 193, 130, 193, 123, 187, 117, 172, 114, 187, 113, 200, 119, 213,
@@ -114,6 +124,7 @@ export function MapPoints() {
       },
       {
         name: "Serratus anterior left",
+        id: 3,
         shape: "poly",
         coords: [
           212, 173, 215, 186, 214, 203, 212, 211, 211, 214, 210, 204, 207, 197,
@@ -127,6 +138,7 @@ export function MapPoints() {
       },
       {
         name: "Triceps brachii left",
+        id: 5,
         shape: "poly",
         coords: [
           362, 251, 365, 238, 366, 227, 369, 215, 371, 198, 369, 181, 360, 166,
@@ -141,6 +153,7 @@ export function MapPoints() {
       },
       {
         name: "Triceps brachii right",
+        id: 5,
         shape: "poly",
         coords: [
           470, 255, 469, 235, 466, 221, 462, 206, 460, 192, 465, 179, 471, 167,
@@ -155,6 +168,7 @@ export function MapPoints() {
       },
       {
         name: "Rectus abdominis",
+        id: 6,
         shape: "poly",
         coords: [
           164, 188, 156, 189, 144, 194, 139, 203, 139, 214, 138, 225, 138, 237,
@@ -170,6 +184,7 @@ export function MapPoints() {
       },
       {
         name: "Gastrocnemius left",
+        id: 6,
         shape: "poly",
         coords: [
           389, 415, 384, 433, 380, 444, 379, 459, 378, 479, 381, 496, 389, 517,
@@ -185,6 +200,7 @@ export function MapPoints() {
       },
       {
         name: "Gastrocnemius right",
+        id: 6,
         shape: "poly",
         coords: [
           447, 412, 442, 426, 438, 434, 431, 445, 425, 453, 424, 464, 423, 476,
@@ -200,6 +216,7 @@ export function MapPoints() {
       },
       {
         name: "Gluteus maximus",
+        id: 7,
         shape: "poly",
         coords: [
           421, 306, 411, 291, 403, 282, 393, 279, 383, 279, 375, 288, 369, 301,
@@ -217,6 +234,7 @@ export function MapPoints() {
       },
       {
         name: "Trapezius back",
+        id: 9,
         shape: "poly",
         coords: [
           429, 97, 423, 88, 416, 85, 408, 91, 398, 104, 386, 114, 376, 122, 358,
@@ -233,6 +251,7 @@ export function MapPoints() {
       },
       {
         name: "Quadriceps femoris right",
+        id: 10,
         shape: "poly",
         coords: [
           130, 289, 129, 306, 119, 323, 112, 340, 109, 351, 110, 360, 112, 376,
@@ -247,6 +266,7 @@ export function MapPoints() {
       },
       {
         name: "Quadriceps femoris left",
+        id: 10,
         shape: "poly",
         coords: [
           203, 290, 200, 306, 198, 318, 194, 329, 190, 340, 183, 355, 176, 376,
@@ -262,6 +282,7 @@ export function MapPoints() {
       },
       {
         name: "Biceps femoris left",
+        id: 11,
         shape: "poly",
         coords: [
           412, 330, 408, 336, 396, 340, 384, 340, 379, 346, 376, 357, 375, 371,
@@ -277,6 +298,7 @@ export function MapPoints() {
       },
       {
         name: "Biceps femoris right",
+        id: 11,
         shape: "poly",
         coords: [
           460, 347, 457, 340, 450, 339, 440, 337, 433, 336, 422, 334, 415, 327,
@@ -292,6 +314,7 @@ export function MapPoints() {
       },
       {
         name: "Latissimus dorsi left",
+        id: 12,
         shape: "poly",
         coords: [
           387, 178, 376, 179, 369, 178, 370, 188, 370, 203, 369, 218, 376, 241,
@@ -306,6 +329,7 @@ export function MapPoints() {
       },
       {
         name: "Latissimus dorsi right",
+        id: 12,
         shape: "poly",
         coords: [
           442, 177, 450, 181, 457, 182, 463, 179, 460, 192, 460, 207, 457, 221,
@@ -321,6 +345,7 @@ export function MapPoints() {
       },
       {
         name: "Brachialis right",
+        id: 13,
         shape: "poly",
         coords: [
           115, 203, 113, 215, 105, 222, 102, 232, 96, 238, 101, 243, 108, 252,
@@ -334,6 +359,7 @@ export function MapPoints() {
       },
       {
         name: "Brachialis left",
+        id: 13,
         shape: "poly",
         coords: [
           212, 213, 218, 220, 221, 227, 226, 235, 221, 241, 215, 253, 214, 242,
@@ -347,6 +373,7 @@ export function MapPoints() {
       },
       {
         name: "Obliquus externus abdominis right",
+        id: 14,
         shape: "poly",
         coords: [
           145, 191, 136, 209, 133, 227, 134, 241, 136, 254, 138, 282, 131, 275,
@@ -361,6 +388,7 @@ export function MapPoints() {
       },
       {
         name: "Obliquus externus abdominis left",
+        id: 14,
         shape: "poly",
         coords: [
           214, 194, 204, 195, 193, 191, 194, 199, 196, 211, 194, 224, 193, 237,
@@ -375,6 +403,7 @@ export function MapPoints() {
       },
       {
         name: "Trapezius front right",
+        id: 9,
         shape: "poly",
         coords: [
           143, 109, 145, 119, 145, 131, 136, 133, 122, 134, 109, 133, 123, 124,
@@ -388,6 +417,7 @@ export function MapPoints() {
       },
       {
         name: "Trapezius front left",
+        id: 9,
         shape: "poly",
         coords: [
           182, 104, 180, 111, 180, 121, 180, 129, 187, 132, 194, 132, 203, 132,
