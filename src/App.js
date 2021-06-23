@@ -8,6 +8,7 @@ import {
 // Page components
 import HumanAnatomy from "./components/HumanAnatomy";
 import MuscleDashboard from "./components/MuscleDashboard";
+import ExerciseDescription from "./components/ExerciseDescription";
 
 function App() {
   let history = useHistory();
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route path="/muscle/:id">
           <MuscleDashboard />
+        </Route>
+        <Route path="/exercise/:id">
+          <ExerciseDescription />
         </Route>
       </Switch>
     </div>

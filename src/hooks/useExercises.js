@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useHistory,
+} from "react-router-dom";
 
 const BASE_URL = `https://wger.de/api/v2`;
 const LANGUAGE = 2; //Language {2} = english
@@ -10,6 +16,7 @@ const useExercises = (muscleId) => {
   const [page, setPage] = useState(null);
   const [pageExercises, setPageExercises] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  let history = useHistory();
 
   useEffect(() => {
     console.log("MUSCLE DASHBOARD EFFECT");
@@ -51,6 +58,11 @@ const useExercises = (muscleId) => {
       setPageExercises(allExercises.slice(page * 10 - 10, page * 10));
     }
   }, [page]);
+
+  //   const handleExerciseClick = (e) => {
+  //     console.log("exercise: ", e.target.id);
+  //     history.push(`/exercise/${e.target.id}`);
+  //   };
 
   return {
     allExercises,

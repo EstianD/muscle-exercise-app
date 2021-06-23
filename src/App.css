@@ -64,6 +64,35 @@ map {
 .exercises-container {
   padding: 25px;
   text-align: left;
+  width: 50%;
+}
+
+/* .exercise-title {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 20px;
+} */
+
+.exercise-link {
+  padding: 15px;
+  width: 100%;
+}
+
+.exercise-link a {
+  text-decoration: none;
+  color: gray;
+  border: 1px solid black;
+  padding: 10px;
+  width: 300px;
+}
+
+.exercise-link a:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+.exercise-title:hover {
+  background-color: rgb(207, 205, 205);
+  cursor: pointer;
 }
 
 /* Pagination section */

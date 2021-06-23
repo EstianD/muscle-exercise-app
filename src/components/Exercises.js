@@ -13,6 +13,7 @@ const Exercises = (props) => {
     page,
     exerciseCount,
     pageExercises,
+    handleExerciseClick,
   } = useExercises(muscleId);
   console.log("EXERCISES PROPS: ", props);
 
@@ -21,7 +22,11 @@ const Exercises = (props) => {
       {isLoading && <p>Loading...</p>}
       {pageExercises.length > 0 &&
         pageExercises.map((exercise) => (
-          <Exercise key={exercise.uuid} exercise={exercise} />
+          <Exercise
+            key={exercise.uuid}
+            exercise={exercise}
+            handleExerciseClick={handleExerciseClick}
+          />
         ))}
       {pageExercises.length > 0 && (
         <ExercisesPagination
