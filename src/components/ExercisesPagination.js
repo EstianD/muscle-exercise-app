@@ -27,6 +27,7 @@ const ExercisesPagination = ({ setPage, page, exerciseCount }) => {
         <p
           style={{ backgroundColor: "gray" }}
           id={pageLoop}
+          key={pageLoop}
           //  onClick={(e) => handlePageNumClick(e)}
           className="pagenum"
         >
@@ -38,6 +39,7 @@ const ExercisesPagination = ({ setPage, page, exerciseCount }) => {
         <p
           className="pagenum"
           //  onClick={(e) => handlePageNumClick(e)}
+          key={pageLoop}
           id={pageLoop}
         >
           {pageLoop}

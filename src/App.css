@@ -67,15 +67,10 @@ map {
   width: 50%;
 }
 
-/* .exercise-title {
+.exercise-title {
   border: 1px solid black;
   padding: 10px;
   margin: 20px;
-} */
-
-.exercise-link {
-  padding: 15px;
-  width: 100%;
 }
 
 .exercise-link a {

@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useHistory,
-} from "react-router-dom";
 
 const BASE_URL = `https://wger.de/api/v2`;
 const LANGUAGE = 2; //Language {2} = english
@@ -16,7 +10,6 @@ const useExercises = (muscleId) => {
   const [page, setPage] = useState(null);
   const [pageExercises, setPageExercises] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  let history = useHistory();
 
   useEffect(() => {
     console.log("MUSCLE DASHBOARD EFFECT");
@@ -28,7 +21,6 @@ const useExercises = (muscleId) => {
           `${BASE_URL}/exercise?muscles=${muscleId}&language=${LANGUAGE}&limit=1000`
         );
         console.log("FULL RESPONSE: ", exercisesRes);
-        console.log("RESPONSE: ", exercisesRes.data.results);
 
         if (exercisesRes) {
           setAllExercises(exercisesRes.data.results);
@@ -48,13 +40,8 @@ const useExercises = (muscleId) => {
     console.log("PAGE CHANGED", page);
     if (page === 1) {
       //  setPageExercises(allExercises.slice(0, page*10));
-      console.log("page results: ", allExercises.slice(0, page * 10));
       setPageExercises(allExercises.slice(0, page * 10));
     } else {
-      console.log(
-        "page results: ",
-        allExercises.slice(page * 10 - 10, page * 10)
-      );
       setPageExercises(allExercises.slice(page * 10 - 10, page * 10));
     }
   }, [page]);

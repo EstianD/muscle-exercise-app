@@ -1,13 +1,11 @@
 import React from "react";
 import Exercise from "./Exercise";
 import ExercisesPagination from "./ExercisesPagination";
-
 import useExercises from "../hooks/useExercises";
 
 const Exercises = (props) => {
-  const { muscleId } = props;
+  const { muscleId, clickShowModal } = props;
   const {
-    allExercises,
     isLoading,
     setPage,
     page,
@@ -26,6 +24,7 @@ const Exercises = (props) => {
             key={exercise.uuid}
             exercise={exercise}
             handleExerciseClick={handleExerciseClick}
+            clickShowModal={clickShowModal}
           />
         ))}
       {pageExercises.length > 0 && (
